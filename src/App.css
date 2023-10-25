@@ -1,0 +1,4 @@
+.container > span {
+  color: yellow;
+  padding-left: 0.5rem;
+}
