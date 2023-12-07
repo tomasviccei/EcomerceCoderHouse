@@ -1,6 +1,6 @@
-import { Container, Form, Table, Button } from "react-bootstrap";
+import { Container, Form, Table } from "react-bootstrap";
 import { useContext, useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
@@ -49,16 +49,19 @@ export const Cart = () => {
       }
     });
   };
-  // const navigate = useNavigate();
 
-  // if (!items.lenght) {
-  //   return (
-  //     <Container className="mt-4">
-  //       <h2>No tienes productos en el carrito</h2>
-  //       <button onClick={() => navigate("/")}>Ir a la home</button>
-  //     </Container>
-  //   );
-  // }
+  const navigate = useNavigate(); 
+  if (!items.length) {
+    return (
+      <Container className="nocart-container">
+
+        <h2 className="titulo-seccion">Ups...</h2>
+        <span>Parece que no hay productos en el carrito</span>
+        <button className="btn-volver" onClick={() => navigate("/")}>Ir a la home</button>
+      </Container>
+    );
+  } 
+ 
   return (
     <Container className="cart-container">
       <h1>Carrito</h1>

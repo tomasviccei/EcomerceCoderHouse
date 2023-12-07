@@ -1,6 +1,5 @@
 import { useContext } from "react";
 
-import Card from "react-bootstrap/Card";
 import { ItemCounter } from "./ItemCounter";
 
 import { CartContext } from "../contexts/CartContext";

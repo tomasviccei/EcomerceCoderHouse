@@ -1,14 +1,9 @@
 
 
-
 .list-container{
-    
-    
-    /* background-color: rgb(33,37,41); */
+ 
     padding: 50px;
-    
-   
-}
+    }
 
 .titulo-seccion {
     font-weight: 600;
@@ -26,7 +21,6 @@
     align-items: center;
     min-height: 100vh;
     
-    /* background-color: rgb(233, 233, 233) ; */
 }
 
 
@@ -180,3 +174,24 @@
     scale: .9;
 }
 
+
+.nocart-container {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nocart-container span {
+    margin-bottom: 30px;
+}
+
+.btn-volver {
+    
+    padding: 10px;
+    background-color: #16FF00;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+}
