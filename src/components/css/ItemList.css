@@ -3,7 +3,6 @@
 
 
 .item-list {
-    position: relative;
     display: grid; 
     gap: 2.5rem;
     grid-auto-rows: 35rem;
@@ -15,11 +14,28 @@
 
 
 .card-body {
+    align-items: center;
     background-color: #36454F;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border: 2px solid #16FF00;
     color: #fff;
+}
+
+.btn-ir {
+    padding: 8px;
+    border-radius: 12px;
+    background-color: #16FF00;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.btn-ir:hover {
+    background-color: #11ca00;
+    color: #fff;
+    scale: .9;
 }
 
