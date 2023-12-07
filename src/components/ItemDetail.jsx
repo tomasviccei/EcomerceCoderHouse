@@ -1,11 +1,32 @@
+import { useContext } from "react";
+
 import Card from "react-bootstrap/Card";
+import { ItemCounter } from "./ItemCounter";
+
+import { CartContext } from "../contexts/CartContext";
+
+import "./css/ItemListCont.css";
 
 export const ItemDetail = ({ item }) => {
+  const { onAdd } = useContext(CartContext);
+  const add = (quantity) => {
+    onAdd(item, quantity);
+  };
+
   return (
-    <Card style={{ width: "30rem" }}>
-      <Card.Title>{item.title}</Card.Title>
-      <Card.Img variant="top" src={item.pictureUrl} />
-      <Card.Body></Card.Body>
-    </Card>
+    <div className="card-det-cont">
+      <div className="imgBox">
+      <img src={item.pictureUrl} />
+      </div>
+      
+
+      <div className="card-det">
+     <span>{item.title}</span>
+    
+      <h2>Stock: {item.stock}</h2>
+      <ItemCounter onAdd={add} stock={item.stock} initial={1} />
+      </div>
+     
+    </div>
   );
 };

@@ -1,0 +1,25 @@
+
+
+
+
+.item-list {
+    position: relative;
+    display: grid; 
+    gap: 2.5rem;
+    grid-auto-rows: 35rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    justify-content: center;
+  
+}
+
+
+
+.card-body {
+    background-color: #36454F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid #16FF00;
+    color: #fff;
+}
+

@@ -6,18 +6,21 @@ import Navbar from "react-bootstrap/Navbar";
 
 import { CartWidget } from "./CartWidget";
 
+import "./css/NavBar.css";
+
+
 export const NavBar = () => {
   return (
     <>
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Navbar.Brand>
-          <NavLink to="/">Home</NavLink>
+            <NavLink className="linkHome" to="/">Home</NavLink>
           </Navbar.Brand>
-          <Nav className="me-auto">
-            <NavLink to="category/auriculares">Auriculares</NavLink>
-            <NavLink to="category/parlantes">Parlantes</NavLink>
-            <NavLink to="category/accesorios">Accesorios</NavLink>
+          <Nav className="links">
+            <NavLink className="link" to="category/auriculares">Auriculares</NavLink>
+            <NavLink className="link" to="category/parlantes">Parlantes</NavLink>
+            <NavLink className="link" to="category/accesorios">Accesorios</NavLink>
           </Nav>
           <CartWidget />
         </Container>

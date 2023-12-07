@@ -1,8 +1,11 @@
 import { Item } from "./Item";
 
+import "./css/ItemList.css"
+
 export const ItemList = ({ items }) => {
   return (
-    <div className="d-flex">
+    <div className="item-list">
+      
       {items.map((item) => (
         <Item key={item.id} item={item} />
       ))}

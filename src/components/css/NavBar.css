@@ -1,0 +1,57 @@
+
+
+
+.links{
+    display: flex;
+    align-self: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.linkHome {
+    font-size: x-large ;
+    font-weight: 600;
+    display: flex;
+    text-decoration: none;
+    color: #16FF00;
+}
+
+.linkHome:hover {
+    color: #fff;
+    scale: 1.1;
+}
+
+.link:hover {
+    color: #16FF00;
+    
+    scale: 1.1;
+}
+
+.cartLik{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.cartLik img {
+    filter: invert(99%) sepia(3%) saturate(470%) hue-rotate(206deg) brightness(116%) contrast(100%);
+}
+
+.cartLik:hover, .cartLik span:hover, .cartLik img:hover{
+    scale: 1.1;
+    color: #16FF00;
+    filter: invert(57%) sepia(89%) saturate(1266%) hue-rotate(69deg) brightness(111%) contrast(133%);;
+}
+
+.cartLik span {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #fff;
+}
